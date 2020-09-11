@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1BF0D067-667B-498C-8368-533FB6142E76}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>DesFacha.My.MyApplication</StartupObject>
+    <RootNamespace>DesFacha</RootNamespace>
+    <AssemblyName>DesFacha</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DesFacha.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DesFacha.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iconodelprograma.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="acercade.Designer.vb">
+      <DependentUpon>acercade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="acercade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aplicaciones.designer.vb">
+      <DependentUpon>aplicaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="aplicaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="asistente.Designer.vb">
+      <DependentUpon>asistente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="asistente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ayuda.Designer.vb">
+      <DependentUpon>ayuda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ayuda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ccleaner.Designer.vb">
+      <DependentUpon>ccleaner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ccleaner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chkdskform.Designer.vb">
+      <DependentUpon>chkdskform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chkdskform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="descargandomessagebox.Designer.vb">
+      <DependentUpon>descargandomessagebox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="descargandomessagebox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="devidimagen.Designer.vb">
+      <DependentUpon>devidimagen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="devidimagen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dxespere.Designer.vb">
+      <DependentUpon>dxespere.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dxespere.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emergencia.Designer.vb">
+      <DependentUpon>emergencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="emergencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="espereporfavor.Designer.vb">
+      <DependentUpon>espereporfavor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="espereporfavor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hitmanpro.Designer.vb">
+      <DependentUpon>hitmanpro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hitmanpro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="infodeldisco.Designer.vb">
+      <DependentUpon>infodeldisco.vb</DependentUpon>
+    </Compile>
+    <Compile Include="infodeldisco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="informacion.Designer.vb">
+      <DependentUpon>informacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="informacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kvrt.Designer.vb">
+      <DependentUpon>kvrt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kvrt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kvrtbotoniniciar.Designer.vb">
+      <DependentUpon>kvrtbotoniniciar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kvrtbotoniniciar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="limpiarprogramas.Designer.vb">
+      <DependentUpon>limpiarprogramas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="limpiarprogramas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="medidor.Designer.vb">
+      <DependentUpon>medidor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="medidor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="navauxiliar.Designer.vb">
+      <DependentUpon>navauxiliar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="navauxiliar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="progresoadw.Designer.vb">
+      <DependentUpon>progresoadw.vb</DependentUpon>
+    </Compile>
+    <Compile Include="progresoadw.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resizer.vb" />
+    <Compile Include="clickearmouse.vb" />
+    <Compile Include="sophosbotoniniciar.Designer.vb">
+      <DependentUpon>sophosbotoniniciar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sophosbotoniniciar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="spybot.Designer.vb">
+      <DependentUpon>spybot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="spybot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="spybotmuestra.Designer.vb">
+      <DependentUpon>spybotmuestra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="spybotmuestra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ssdono.vb" />
+    <Compile Include="stinger.Designer.vb">
+      <DependentUpon>stinger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stinger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stingerbotoniniciar.Designer.vb">
+      <DependentUpon>stingerbotoniniciar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stingerbotoniniciar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tddskillerbotoniniciar.Designer.vb">
+      <DependentUpon>tddskillerbotoniniciar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tddskillerbotoniniciar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="variableaplicaciones.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="instruccionesadwcleaner.Designer.vb">
+      <DependentUpon>instruccionesadwcleaner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="instruccionesadwcleaner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="log.vb" />
+    <Compile Include="malwarepasos.Designer.vb">
+      <DependentUpon>malwarepasos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="malwarepasos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="novedades.Designer.vb">
+      <DependentUpon>novedades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="novedades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opciones.Designer.vb">
+      <DependentUpon>opciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="opciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="variablesdelbotoniniciar.vb" />
+    <Compile Include="windowsrepair.Designer.vb">
+      <DependentUpon>windowsrepair.vb</DependentUpon>
+    </Compile>
+    <Compile Include="windowsrepair.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wmi.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="acercade.resx">
+      <DependentUpon>acercade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aplicaciones.resx">
+      <DependentUpon>aplicaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="asistente.resx">
+      <DependentUpon>asistente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ayuda.resx">
+      <DependentUpon>ayuda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ccleaner.resx">
+      <DependentUpon>ccleaner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chkdskform.resx">
+      <DependentUpon>chkdskform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="descargandomessagebox.resx">
+      <DependentUpon>descargandomessagebox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="devidimagen.resx">
+      <DependentUpon>devidimagen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxespere.resx">
+      <DependentUpon>dxespere.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emergencia.resx">
+      <DependentUpon>emergencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="espereporfavor.resx">
+      <DependentUpon>espereporfavor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hitmanpro.resx">
+      <DependentUpon>hitmanpro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="infodeldisco.resx">
+      <DependentUpon>infodeldisco.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informacion.resx">
+      <DependentUpon>informacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="instruccionesadwcleaner.resx">
+      <DependentUpon>instruccionesadwcleaner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kvrt.resx">
+      <DependentUpon>kvrt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kvrtbotoniniciar.resx">
+      <DependentUpon>kvrtbotoniniciar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="limpiarprogramas.resx">
+      <DependentUpon>limpiarprogramas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="malwarepasos.resx">
+      <DependentUpon>malwarepasos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="medidor.resx">
+      <DependentUpon>medidor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="navauxiliar.resx">
+      <DependentUpon>navauxiliar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="novedades.resx">
+      <DependentUpon>novedades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="opciones.resx">
+      <DependentUpon>opciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="progresoadw.resx">
+      <DependentUpon>progresoadw.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sophosbotoniniciar.resx">
+      <DependentUpon>sophosbotoniniciar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="spybot.resx">
+      <DependentUpon>spybot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="spybotmuestra.resx">
+      <DependentUpon>spybotmuestra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stinger.resx">
+      <DependentUpon>stinger.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stingerbotoniniciar.resx">
+      <DependentUpon>stingerbotoniniciar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tddskillerbotoniniciar.resx">
+      <DependentUpon>tddskillerbotoniniciar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowsrepair.resx">
+      <DependentUpon>windowsrepair.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="iconodelprograma.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
